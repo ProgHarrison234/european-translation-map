@@ -13,9 +13,17 @@
               width: 500px;
         }
     </style>
-    <script src = "map_script.js"></script>
 </head>
 <body>
-    
+    <div id='map'></div>
+    <script>
+        var map = tt.map({
+            container: 'map',
+            key: 'UidCozvRt9CII6OELF37fl3Z07e2PyGh',
+            center: {lat: 53.3439, lng: 13.0622},
+            zoom: 2,
+            style: 'tomtom://vector/1/basic-main'
+        });
+    </script>
 </body>
 </html>
