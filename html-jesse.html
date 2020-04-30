@@ -1,0 +1,61 @@
+
+
+<!--HTML from Nik, modified  to include ZURB CSS Framweork. by Jesse-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>European Translation Map</title>
+	<!--More jQuery-->
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+	<!-- CSS Reset -->
+	<link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+	<!--Zurb Foundation Compressed CSS-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+	<!--local CSS-->
+	<link rel="stylesheet" href="assets/css/style-jesse.css">
+	<!--Zurb Foundation Compressed JavaScript-->
+	<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="">
+	<!--Local js-->
+	<script src="assets/js/script-jesse.js"></script>
+	<script src="assets/js/map_script.js"></script>
+	<script src="assets/js/script.js"></script>
+	
+</head>
+<body>
+	<!--Instead of class="row" (bootstrap) ZURB uses class="grid-x" for rows, and class="cell" for columns.-->
+	<!--"grid-x" is a container for cells.  "cell" is a container for content-->
+	<!--Just like bootstrap uses 12 columns per row, ZURB uses a 12 cells pre grid-x.-->
+    <header class="grid-x">
+	   <h1 class="cell small-6">European Translation Map</h1>
+	   <!--My first ZURB Foundation layout example-->
+	   <h1 class="cell small-6">This is a small-6 ZURB CELL</h1>
+    </header>
+
+    <!---->
+    <button class="button large" id="changeHeader">Switch Header Cells to 4/8</button>
+
+    <main>
+        <h3>Input word to be translated below</h3>
+        <input id = "word-input" type="text" style="width: 300px;" placeholder = "Input word to be translated"><button id = "search-btn" style="padding: 5px; background-color: fuchsia;">Search</button>
+        <br>
+        <!-- Map goes here -->
+        <div id = "map"></div>
+        <!--  -->
+        <p>In a map similar to the above map the word translated for each countries will be displayed near the country name</p>
+    </main>
+    <footer>
+
+    </footer>
+
+    <div id="embedded-audios">
+		<audio id="clickSound" src="assets/audio/click.wav"></audio>
+    </div>
+
+</body>
+</html>
