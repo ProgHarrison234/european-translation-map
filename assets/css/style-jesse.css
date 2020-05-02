@@ -1,15 +1,26 @@
-/* body {
-	
-} */
+
+#map {
+	height: 675px;
+	/* width: 95%; */
+	/* margin-left: 2.5%; */
+}
 
 header {
-	
+	/* position: absolute;
+	top: 0;
+	left: 0;
+	right: 0; */
 	background-image: url(../images/woven.png);
+	text-align: center;
 }
 
 h1 {
+	font-size: 40px;
 	font-family: 'Cabin', sans-serif;
 	color: ghostwhite;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	font-weight: 900;
 }
 
 header::after {
@@ -20,3 +31,38 @@ header::after {
 	height: 2px;
 	margin-top: 20px;
    }
+
+   main {
+	   margin-left: 2.5%;
+	   width: 95%;
+	   height: 100%;
+   }
+
+   .inline {
+	   display: inline-block;
+   }
+
+   h3 {
+	   font-size: 25px;
+	   width: 75%;
+   }
+
+
+#userInput {
+	width: 100%;
+}
+
+   button {
+	   padding: 11px;
+	   background-color: #4040fd;
+	   border: 1px solid blue;
+	   color: white;
+   }
+
+.mapboxgl-popup-content {color: blue; background-color: yellow;}
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+    -webkit-align-self: center;
+    align-self: center;
+    border-bottom: none;
+    border-top-color: yellow;
+} 

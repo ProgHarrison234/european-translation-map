@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <title>European Translation Map</title>
 
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="style.css">
+    <!--Google fonts-->
+    <!-- font-family: 'Cabin', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' type='text/css'
+        href='https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.37.2/maps/maps.css' />
+    <!--Zurb Foundation Compressed CSS-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+    <!--Fontawesome CSS-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style-jesse.css">
+
+    <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.37.2/maps/maps-web.min.js'
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!--Zurb Foundation Compressed JavaScript-->
+	<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <header>
-        <h1>European Translation Map</h1>
+        <h1><i class="fas fa-globe"></i> European Translation Map <i class="fas fa-globe"></i></h1>
     </header>
     <main>
+        <!-- <br> -->
         <h3>Input word to be translated below</h3>
-        <input type="text"> Translate from: <button> English</button><button>Spanish</button><button>etc</button>
-        <br>
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fcf%2F06%2F81%2Fcf06818528b9c5747f3388e74b01eb30.jpg&f=1&nofb=1" width = "1000" height = "650" alt="European Countries Map">
-        <p>In a map similar to the above map the word translated for each countries will be displayed near the country name</p>
+        <div class="inline">
+            
+            <input id="userInput" type="text" placeholder="Translate from English">
+        </div>
+        
+        <button id="translate" data-open="mapModal">Translate</button>
+        <!-- <br><br> -->
+        <!-- <div class="reveal" id="mapModal" data-reveal> -->
+            <div id="map"></div>
+            <!-- <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button> -->
+        <!-- </div> -->
     </main>
+
     <footer>
 
     </footer>
+    <script src="assets/js/map_script.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+
 </body>
+
 </html>

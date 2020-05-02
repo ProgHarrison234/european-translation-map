@@ -1,1 +1,7 @@
-.marker {color: blue; background-color: salmon;} 
+.mapboxgl-popup-content {color: blue; background-color: yellow;}
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+    -webkit-align-self: center;
+    align-self: center;
+    border-bottom: none;
+    border-top-color: yellow;
+} 
