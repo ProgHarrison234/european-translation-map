@@ -1,11 +1,5 @@
 $(document).ready(function () {
 
-	$(document).foundation();
-	sounds = {
-		clickSound: () => $("#clickSound")[0].play()
-	}
+	$("#exampleModal1").foundation("open");
 
-	$("#changeHeader").click(sounds.clickSound);
-
-	
 });
