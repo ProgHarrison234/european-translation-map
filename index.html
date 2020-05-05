@@ -20,10 +20,11 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="assets/css/style-jesse.css">
-
+    <link rel="stylesheet" href="assets/css/style.css">
+	<!-- tomtom maps api -->
     <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.37.2/maps/maps-web.min.js'
-        crossorigin="anonymous"></script>
+	   crossorigin="anonymous"></script>
+	<!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <!--Zurb Foundation Compressed JavaScript-->
@@ -33,35 +34,35 @@
 </head>
 
 <body>
-    <header>
-        <h1><i class="fas fa-globe"></i> European Translation Map <i class="fas fa-globe"></i></h1>
-    </header>
-    <main>
-        <!-- <br> -->
-        <h3>Input word to be translated below</h3>
-        <div class="inline">
-            
-            <input id="userInput" type="text" placeholder="Translate from English">
-        </div>
-        
-        <button id="translate" data-open="mapModal">Translate</button>
-        <!-- <br><br> -->
-        <!-- <div class="reveal" id="mapModal" data-reveal> -->
-            <div id="map"></div>
-            <!-- <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button> -->
-        <!-- </div> -->
-    </main>
-
-    <footer>
-
-    </footer>
-    <script src="assets/js/map_script.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
-
-</body>
-
-</html>
+	<header>
+	    <h1><i class="fas fa-globe"></i> European Translation Map <i class="fas fa-globe"></i></h1>
+	</header>
+	<main>
+	    
+		 <div id="map">
+			 
+			 <div id="userInputDiv" class=userInputDiv'>
+ 
+				 <div class="inline ">
+					 <input id="userInput" type="text" placeholder="Translate from English">
+				 </div>
+ 
+				 <button id="translate" data-open="mapModal">Translate</button>
+ 
+			 </div>
+ 
+		 </div>
+		  
+	</main>
+ 
+	<footer>
+ 
+	</footer>
+	<script src="assets/js/map_script.js"></script>
+	<script>
+	    $(document).foundation();
+	</script>
+ 
+ </body>
+ 
+ </html>
