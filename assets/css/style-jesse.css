@@ -1,0 +1,22 @@
+/* body {
+	
+} */
+
+header {
+	
+	background-image: url(../images/woven.png);
+}
+
+h1 {
+	font-family: 'Cabin', sans-serif;
+	color: ghostwhite;
+}
+
+header::after {
+	content: " ";
+	display: block;
+	width: 100%;
+	background: #e7e9eb;
+	height: 2px;
+	margin-top: 20px;
+   }
