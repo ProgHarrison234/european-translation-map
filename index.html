@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<title>European Translation Map</title>
+
+	<!--Google fonts-->
+	<!-- font-family: 'Cabin', sans-serif; -->
+	<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+
+	<!-- tomtom CSS -->
+	<link rel='stylesheet' type='text/css'
+		href='https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.37.2/maps/maps.css' />
+
+
+	<!--Zurb Foundation Compressed CSS-->
+	<link rel="stylesheet" href="assets/css/app.css" />
+
+
+	<!--Fontawesome CSS-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+
+	<!-- local CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	
+	<!-- tomtom maps js-->
+	<script src='https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.37.2/maps/maps-web.min.js'
+		crossorigin="anonymous"></script>
+
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+	<!--Zurb Foundation java Script-->
+	<script src='assets/js/foundation.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/plugins/foundation.tooltip.min.js'></script>
+
+	<script src="assets/js/map_script.js"></script>
+
+
+</head>
+
+<body>
+	<header>
+		<h1><i class="fas fa-globe"></i> European Translation Map <i class="fas fa-globe"></i></h1>
+	</header>
+
+	<main>
+
+		<div id="map">
+
+			<div id="userInputDiv" class="userInputDiv">
+
+				<div class='grid-x'>
+
+					<div class="cell auto">
+						<input id="userInput" type="text" placeholder="Translate from English">
+					</div>
+
+					<div id="btn-div" class='cell shrink'>
+						<button id="translate">Translate</button>
+						<h6 id="translating">Translating <div class="loader"></div></h6>
+						
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<footer>
+
+	</footer>
+	
+	<script>
+		$(document).foundation();
+	</script>
+
+	
+	
+</body>
+
+</html>

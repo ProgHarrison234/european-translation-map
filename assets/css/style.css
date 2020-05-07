@@ -1,0 +1,172 @@
+#map {
+	height: 775px;
+	/* width: 95%; */
+	/* margin-left: 2.5%; */
+}
+
+header {
+	/* position: absolute;
+	top: 0;
+	left: 0;
+	right: 0; */
+	background-image: url(../images/woven.png);
+	text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: 'Cabin', sans-serif;
+	color: ghostwhite;
+	font-weight: 900;
+	padding: 20px;
+}
+
+h6 {
+	margin-top: 10px;
+	margin-bottom: 0;
+	white-space:nowrap;
+	color: white;
+}
+
+
+   main {
+	   margin: 2.0%;
+	   width: 95%;
+	   height: 100%;
+   }
+
+#translate {
+	
+	height: 39px;
+	margin-left: 5px;
+}
+
+#userInput {
+	margin-bottom: 0px;
+}
+
+#userInputDiv {
+	position: absolute;
+	top: 5%;
+	left: 2.5%;
+	z-index:2;
+	background-color: rgb(65, 65, 149);
+	border-radius: 5px;
+	padding: 10px 20px 10px 20px;
+}
+
+.inline {
+	display: inline-block;
+}
+
+h3 {
+	font-size: 25px;
+	width: 75%;
+}
+
+button {
+	padding: 11px;
+	background-color: #4040fd;
+	border: 1px solid blue;
+	color: white;
+}
+
+.mapboxgl-popup-content {color: blue; background-color: yellow;}
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+    -webkit-align-self: center;
+    align-self: center;
+    border-bottom: none;
+    border-top-color: yellow;
+} 
+
+.translatedPopup {
+    animation: fadeIn ease 0.5s;
+    -webkit-animation: fadeIn ease 0.5s;
+    -moz-animation: fadeIn ease 0.5s;
+    -o-animation: fadeIn ease 0.5s;
+    -ms-animation: fadeIn ease 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.mapboxgl-marker {
+	display: none;
+}
+
+.loader {
+	border: 2px solid #f3f3f3; /* Light grey */
+	border-top: 2px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	animation: spin 2s linear infinite;
+	display: inline-block;
+  }
+  
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 450px) {
+
+	#userInputDiv {
+
+		top:1%;
+		width: 95%;
+
+	}
+	
+}
+
+@media screen and (max-width: 576px) {
+
+	h1 {
+		font-size: 7vw;
+		padding: 10px;
+	}
+
+}
