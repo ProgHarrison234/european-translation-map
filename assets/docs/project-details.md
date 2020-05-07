@@ -1,20 +1,29 @@
 # Distribution of labor
 
-Nobo
+## Nobo
 
-Designed and coded interaction between the Translation and Tomtom map API's
+**Primary Responsibilities and Contributions:**
 
-Nick
+Translation API implementation.
 
-Researched and APIs and selected the ultimate translation API according to criteria: unlimited calls.
+Map API implementation.
 
-The liveshare guy, managed rep on github
-
-
+Integration of Translation and Map API's
 
 
-Jesse
+## Nick
 
-Chose and implemented the non bootstrap CSS framework
+**Responsibilities and Contributions:**
 
-refined visual appearance of site in css
+Resource gathering: API candidates, geo-coordinates
+
+GitHub repository management
+
+
+
+## Jesse
+
+**Responsibilities and Contributions:**
+
+CSS Framework Implementation
+
