@@ -1,5 +1,5 @@
 #map {
-	height: 750px;
+	height: 775px;
 	/* width: 95%; */
 	/* margin-left: 2.5%; */
 }
@@ -17,19 +17,17 @@ h1 {
 	font-size: 40px;
 	font-family: 'Cabin', sans-serif;
 	color: ghostwhite;
-	padding-top: 25px;
-	padding-bottom: 10px;
 	font-weight: 900;
+	padding: 20px;
 }
 
-header::after {
-	content: " ";
-	display: block;
-	width: 100%;
-	background: #e7e9eb;
-	height: 2px;
-	margin-top: 20px;
-   }
+h6 {
+	margin-top: 10px;
+	margin-bottom: 0;
+	white-space:nowrap;
+	color: white;
+}
+
 
    main {
 	   margin: 2.0%;
@@ -38,13 +36,13 @@ header::after {
    }
 
 #translate {
-	border-radius: 5px;
-	height: 90%
+	
+	height: 39px;
+	margin-left: 5px;
 }
 
 #userInput {
-	height: 90%;
-	width: 75%;
+	margin-bottom: 0px;
 }
 
 #userInputDiv {
@@ -54,7 +52,7 @@ header::after {
 	z-index:2;
 	background-color: rgb(65, 65, 149);
 	border-radius: 5px;
-	padding: 30px 20px 20px 20px;
+	padding: 10px 20px 10px 20px;
 }
 
 .inline {
@@ -64,11 +62,6 @@ header::after {
 h3 {
 	font-size: 25px;
 	width: 75%;
-}
-
-
-#userInput {
-	width: 100%;
 }
 
 button {
@@ -141,4 +134,39 @@ button {
 
 .mapboxgl-marker {
 	display: none;
+}
+
+.loader {
+	border: 2px solid #f3f3f3; /* Light grey */
+	border-top: 2px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	animation: spin 2s linear infinite;
+	display: inline-block;
+  }
+  
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 450px) {
+
+	#userInputDiv {
+
+		top:1%;
+		width: 95%;
+
+	}
+	
+}
+
+@media screen and (max-width: 576px) {
+
+	h1 {
+		font-size: 7vw;
+		padding: 10px;
+	}
+
 }
