@@ -159,7 +159,7 @@ $(document).ready(function () {
  
 	    });
  
-	    $("#translate").click(translate, loadSpinner);
+	    $("#translate").click(translate).click(loadSpinner);
  
 	}
  
