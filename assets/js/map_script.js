@@ -92,7 +92,7 @@ $(document).ready(function () {
 			  "crossDomain": true,
 			  "url": "https://systran-systran-platform-for-language-processing-v1.p.rapidapi.com/translation/text/translate?source=en&target=" + tar + "&input=" + input,
 			  "method": "GET",
-			  "timeout": 60000,
+			  "timeout": 10000,
 			  "headers": {
 				 "x-rapidapi-host": "systran-systran-platform-for-language-processing-v1.p.rapidapi.com",
 				 "x-rapidapi-key": "3b1f89eff6mshab8e7128017902cp1b3284jsn5b1ce32a3c5c"
