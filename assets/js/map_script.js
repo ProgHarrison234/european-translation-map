@@ -95,7 +95,7 @@ $(document).ready(function () {
 			  "timeout": 60000,
 			  "headers": {
 				 "x-rapidapi-host": "systran-systran-platform-for-language-processing-v1.p.rapidapi.com",
-				 "x-rapidapi-key": "93a3b6aa67mshcc551909c5a2a60p176b4cjsn24b1dd1fd651"
+				 "x-rapidapi-key": "3b1f89eff6mshab8e7128017902cp1b3284jsn5b1ce32a3c5c"
  
 			  }
  
