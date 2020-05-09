@@ -16,10 +16,9 @@ So that I can speak to the locals at a basic level
 index.html
 
 ## APIs to be used
-* Maps JavaScript API by Google: https://developers.google.com/maps/documentation/javascript/tutorial
+* TomTom Maps API: https://developer.tomtom.com/#
 
-* Google Cloud Translation API: https://cloud.google.com/translate/docs
-
+* SYSTRAN.io Translate API: https://platform.systran.net/index
 
 ## Rough breakdown of tasks
 * style mobile-first UI.
