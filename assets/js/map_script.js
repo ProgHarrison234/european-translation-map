@@ -18,10 +18,10 @@ $(document).ready(function () {
 	let map = tt.map({
  
 	    container: 'map',
-	    key: 'UidCozvRt9CII6OELF37fl3Z07e2PyGh',
+	    key: 'IZ0RMVec7S9rARyrNQXSbkwDQJQhNYUJ',
 	    center: { lat: 50.9375, lng: 6.9603 },
 	    zoom: 3.8,
-	    style: 'tomtom://vector/1/basic-main',
+		style: 'tomtom://vector/1/basic-main',
 	    language: "en-US"
  
 	});
@@ -76,9 +76,14 @@ $(document).ready(function () {
 		   if (langList[i] === "en") {
  
 			  let marker = new tt.Marker().setLngLat(coordinates["Br"]).addTo(map);
-			  let popup = new tt.Popup({ offset: popupOffsets, closeButton: false, className: "translatedPopup" }).setHTML(input);
+			  let popup = new tt.Popup({ offset: popupOffsets, closeButton: false, closeOnClick: false, className: `translatedPopup popupEn` }).setHTML(input);
 			  marker.setPopup(popup).togglePopup();
+			  $(`.popupEn .mapboxgl-popup-content`).addClass(`tooltip tooltipDivEn`); 
 			  numWaits--;
+
+			  let tooltipSpan = $("<span>").attr("class", "tooltiptext toolTipEn").text("English");
+			 $(`.popupEn .mapboxgl-popup-content`).append(tooltipSpan);
+
 			  if (numWaits === 0) {
 				 clearLoadSpinner();
 			  }
@@ -95,7 +100,7 @@ $(document).ready(function () {
 			  "timeout": 6000,
 			  "headers": {
 				 "x-rapidapi-host": "systran-systran-platform-for-language-processing-v1.p.rapidapi.com",
-				 "x-rapidapi-key": "93a3b6aa67mshcc551909c5a2a60p176b4cjsn24b1dd1fd651"
+				 "x-rapidapi-key": "3b1f89eff6mshab8e7128017902cp1b3284jsn5b1ce32a3c5c"
  
 			  }
  
@@ -104,18 +109,22 @@ $(document).ready(function () {
 		   requestList.push($.ajax(settings).done(function (response) {
  
 			
-			console.log($('span'));
 			  let marker = new tt.Marker().setLngLat(coordinates[countryList[i]]).addTo(map);
 
 			  //  create popup
-			  let popup = new tt.Popup({ offset: popupOffsets, closeButton: false, closeOnClick: false, className: `translatedPopup popup${i}` }).setHTML("");
+			  let popup = new tt.Popup({ offset: popupOffsets, closeButton: false, closeOnClick: false, className: `translatedPopup popup${i}` }).setHTML(response.outputs[0].output);
 			  marker.setPopup(popup).togglePopup();
+			  $(`.popup${i} .mapboxgl-popup-content`).addClass(`tooltip tooltipDiv${i}`); 
+
+				// $(`.popup${i} .mapboxgl-popup-content`)
+			   // $(".mapboxgl-popup-content").addClass("tooltip"); 
+			//$(".mapboxgl-popup-content").attr("idx`x`", );
+
 
 
 			  //  add translation with popup for translation.
-			  $("<span>").attr("data-tooltip", "").attr("tabindex", "1").attr("title", keymap[i]).attr("data-hover-delay", "0").attr("data-position", "left").attr("data-alignment", "center").text(response.outputs[0].output).appendTo($(`.popup${i} .mapboxgl-popup-content`));
-			  $('.translatedPopup').addClass('slideInRight animated');
-		
+			 let tooltipSpan = $("<span>").attr("class", "tooltiptext toolTip"+i).text(keymap[i]);
+			 $(`.popup${i} .mapboxgl-popup-content`).append(tooltipSpan);
 			  
 			  numWaits--;
 			  if (numWaits === 0) {
@@ -154,7 +163,6 @@ $(document).ready(function () {
  
 			  translate();
 			  loadSpinner();
- 
 		   }
  
 	    });
