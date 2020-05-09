@@ -1,6 +1,6 @@
 # European Translation Map
 
-![site-gif](eurotrans.gif)
+![site-gif](assets/images/eurotrans.gif)
 
 This web application provides travelers and language enthusiasts alike a tool that translates words from english into several European languages and displays the translations according to their geographic location.
 
