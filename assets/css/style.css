@@ -71,7 +71,8 @@ button {
 	color: white;
 }
 
-.mapboxgl-popup-content {color: blue; background-color: yellow;}
+.mapboxgl-popup-content {color: blue; background-color: yellow;font-size: small;}
+
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
     -webkit-align-self: center;
     align-self: center;
@@ -86,6 +87,30 @@ button {
     -o-animation: fadeIn ease 0.5s;
     -ms-animation: fadeIn ease 0.5s;
 }
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 75px;
+	background-color: #4C6AFF;
+	color: yellow;
+	font-size: small;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+  
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+  }
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+  }
 
 @keyframes fadeIn {
     0% {
