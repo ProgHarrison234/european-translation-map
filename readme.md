@@ -12,7 +12,8 @@ The applications operates by integrating two API's
 
 [TomTom Maps API](https://developer.tomtom.com/products/maps-api?gclid=CjwKCAjwqdn1BRBREiwAEbZcR9Wf4yvv-zYNdPuiuSJCpF2l_c_z29CUdHUVXw03WLPxt1B4e273GRoCWngQAvD_BwE)
 
-[Systran Translate API](https://platform.systran.net/reference/translation)
+[MicrosoftAzure Text Translator](https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text/)
+
 
 ## Contributions 
 
